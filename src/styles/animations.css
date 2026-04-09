@@ -1,0 +1,79 @@
+/* Dancing animation - full body groove */
+@keyframes dance {
+  0%   { transform: translateY(0px) rotate(0deg) scale(1); }
+  10%  { transform: translateY(-15px) rotate(-8deg) scale(1.05); }
+  20%  { transform: translateY(-5px) rotate(8deg) scale(1.02); }
+  30%  { transform: translateY(-20px) rotate(-5deg) scale(1.08); }
+  40%  { transform: translateY(-8px) rotate(5deg) scale(1.03); }
+  50%  { transform: translateY(-25px) rotate(0deg) scale(1.1); }
+  60%  { transform: translateY(-8px) rotate(-5deg) scale(1.03); }
+  70%  { transform: translateY(-20px) rotate(5deg) scale(1.08); }
+  80%  { transform: translateY(-5px) rotate(-8deg) scale(1.02); }
+  90%  { transform: translateY(-15px) rotate(8deg) scale(1.05); }
+  100% { transform: translateY(0px) rotate(0deg) scale(1); }
+}
+
+/* Side-to-side sway */
+@keyframes sway {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(-15deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Arm wave */
+@keyframes wave-left {
+  0%   { transform: rotate(-20deg); }
+  50%  { transform: rotate(-60deg); }
+  100% { transform: rotate(-20deg); }
+}
+
+@keyframes wave-right {
+  0%   { transform: rotate(20deg); }
+  50%  { transform: rotate(60deg); }
+  100% { transform: rotate(20deg); }
+}
+
+/* Ear wiggle */
+@keyframes ear-wiggle {
+  0%   { transform: rotate(0deg); }
+  30%  { transform: rotate(-10deg); }
+  60%  { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Tail wag */
+@keyframes tail-wag {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(-20deg); }
+  75%  { transform: rotate(20deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Pulse glow effect */
+@keyframes glow {
+  0%   { filter: drop-shadow(0 0 8px rgba(244, 162, 97, 0.4)); }
+  50%  { filter: drop-shadow(0 0 20px rgba(244, 162, 97, 0.9)); }
+  100% { filter: drop-shadow(0 0 8px rgba(244, 162, 97, 0.4)); }
+}
+
+/* Stars/sparkles around cat */
+@keyframes sparkle {
+  0%   { opacity: 0; transform: scale(0) rotate(0deg); }
+  50%  { opacity: 1; transform: scale(1) rotate(180deg); }
+  100% { opacity: 0; transform: scale(0) rotate(360deg); }
+}
+
+/* Idle bounce (when paused) */
+@keyframes idle-bounce {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-5px); }
+}
+
+/* Music note float */
+@keyframes float-note {
+  0%   { opacity: 0; transform: translateY(0) scale(0.5); }
+  30%  { opacity: 1; transform: translateY(-20px) scale(1); }
+  100% { opacity: 0; transform: translateY(-60px) scale(0.8); }
+}
